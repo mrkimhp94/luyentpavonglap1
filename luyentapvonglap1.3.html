@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><p id="hd"> </p>
+<script>
+
+    let a =1,b=0,c;
+    let i=0;
+    while (i<20){
+        c=a;
+        a=a+b;
+        b=c;
+        i++;
+        document.getElementById("hd").innerHTML += b + "<br>";
+    }
+</script>
+</body>
+</html>

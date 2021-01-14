@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<p id="ht"></p>
+<body>
+<button type="button" onclick="clickToPlay()">Play</button>
+<script>
+    function clickToPlay() {
+        let a = parseInt(prompt("nhập giới hạn"));
+        let x = Math.floor(Math.random() * a + 1);
+        for (let i = 0; i <= a; i++) {
+            let y = parseInt(prompt("Nhập số đoán"));
+            if (x == y) {
+                document.getElementById("ht").innerHTML = "Hoàn thành";
+                break;
+                // }else if (x<y){
+                //     document.getElementById("ht").innerHTML = " Nhập số nhỏ hơn";
+                // }else {
+                //     document.getElementById("ht").innerHTML = "Nhập số lớn hơn";
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

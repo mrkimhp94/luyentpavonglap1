@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><p id="hd"></p>
+<script>
+    let a = 1, b = 0, c;
+    for (let i=0;;i++) {
+        c = a;
+        a = a + b;
+        b = c;
+        if (c%5==0){
+            document.getElementById("hd").innerHTML = b;
+            break;
+        }
+    }
+</script>
+</body>
+</html>
